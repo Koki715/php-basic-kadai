@@ -17,8 +17,12 @@
             $this->name = $name;
             $this->price = $price;
            }
+           public function show_price(){
+            echo $this->price . '<br>';
+           }
        }
        $food = new Food('potato', 250);
+       $potato->show_price();
        print_r($food);
 
        class Animal{
@@ -31,8 +35,12 @@
             $this->height = $height;
             $this->weight = $weight;
            }
+           public function show_height(){
+            echo $this->name . '<br>';
+           }
        }
        $animal = new Animal('dog', 60, 5000);
+       $dog->show_height();
        print_r($animal);
        
        ?>
